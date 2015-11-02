@@ -25,6 +25,10 @@
 				<button class="btn btn-primary" ng-click="vm.buscar()">Buscar</button>
 			</div>
 		</div>
+		<div class="row" ng-if="!vm.showForm">
+			<suggested-routes>
+			</suggested-routes>
+		</div>
 	</div>
 	<message manager="vm.messageManager">
 	</message>

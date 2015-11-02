@@ -9,7 +9,7 @@
 		var vm = this;
 		vm.busqueda = {};
 		vm.buscar = search;
-		vm.showForm = true;
+		vm.showForm = false;
 		vm.messageManager = {};
 		init();
 
