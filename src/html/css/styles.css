@@ -1,0 +1,47 @@
+header {
+	background-color: #2196f3;
+	color: #FFFFFF;
+	height: 80px;
+}
+nav {
+	height: 100%;
+}
+.bus-nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 100%;
+}
+
+.bus-nav li {
+	float: left;
+	opacity: 0.7;
+	width: 33%;
+	height: 100%;
+	padding-top: 25px;
+}
+.bus-nav li.active {
+	opacity: 1.0;
+}
+
+.bus-nav a {
+	display: block;
+	color: #FFFFFF;
+	height: 100%;
+	text-align: center;
+}
+
+.bus-nav a:active, a:focus {
+	text-decoration: none;
+}
+
+.bus-nav li a i {
+	display: block;
+	margin: 2px auto;
+	font-size: 2em;
+
+}
+
+.map-container {
+	overflow: hidden;
+}
