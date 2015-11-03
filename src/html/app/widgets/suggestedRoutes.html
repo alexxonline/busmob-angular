@@ -1,8 +1,15 @@
 <div>
 	<div class="route" ng-repeat="route in vm.routes">
-		<div class="route-header"> 
-		<i class="fa fa-clock-o"></i> {{route.start}} - {{route.end}} <i class="fa fa-pie-chart"></i> {{route.totalTime}} min 
-		<i class="fa fa-male"></i> {{route.walkDistance}} 
+		<div class="route-header" ng-click="vm.toggleExpansion(route)"> 
+			<span class="left"><i class="fa fa-clock-o"></i> {{route.start}} - {{route.end}}</span>
+			<span> <i class="fa fa-pie-chart"></i> {{route.totalTime}} min </span>
+			<span class="right"><i class="fa fa-male"></i> {{route.walkDistance}} m </span>
+		</div>
+		<div ng-if="route.expanded">
+			<div class="route-body" ng-repeat="part in route.parts">
+				<route-part part="part">
+				</route-part>
+			</div>
 		</div>
 	</div>
 </div>

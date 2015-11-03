@@ -1,0 +1,16 @@
+<div>
+	<div>
+		<span class="time">{{vm.part.time}}</span>
+		<i class="fa fa-circle-o"></i>
+		<strong class="name">{{vm.part.name}}</strong>
+	</div>
+	<div>
+		<i class="fa fa-male type" ng-if="vm.part.type == 'walk'"></i>
+		<i class="fa fa-bus type" ng-if="vm.part.type == 'bus'"></i>
+		<i class="fa fa-subway type" ng-if="vm.part.type == 'trole'"></i>
+		<span class="instruction">{{vm.part.instruction}}</span>
+	</div>
+	<div>
+		<span class="distance-duration">{{vm.part.distance}}m ({{vm.part.duration}} min)</span>
+	</div>
+</div>

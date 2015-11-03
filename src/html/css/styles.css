@@ -45,3 +45,40 @@ nav {
 .map-container {
 	overflow: hidden;
 }
+
+.route-header {
+	background-color: #EEEEEE;
+	padding: 10px;
+	text-align: center;
+}
+	.route-header .left {
+		float: left;
+	}
+
+	.route-header .right {
+		float: right;
+	}
+
+.route-body .name {
+	color: #333333;
+}
+
+.route-body .time, .route-body .type {
+	width: 12%;
+	display: inline-block;
+}
+
+
+.route-body .type {
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.route-body .instruction {
+	margin-left: 1.1em;
+}
+
+.route-body .distance-duration{
+	margin-left: 4.8em;
+	color: #888888;
+}

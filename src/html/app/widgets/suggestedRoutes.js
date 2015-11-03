@@ -16,32 +16,37 @@
 
 		function suggestedRoutesCtrl($http) {
 			var vm = this;
+			vm.toggleExpansion = toggleExpansion;
 
+			///////////////////
 			vm.routes = [{
 					start: "17:54",
 					end: "18:27",
 					totalTime: 33,
 					walkDistance: 342,
-					sub: [{name: "Empezar viaje en ubicación actual",
+					parts: [{name: "Empezar viaje en ubicación actual",
+						time: "17:54",
 						instruction: "Andar a destino Maestro Vidal 127",
 						type: "walk",
 						distance: 113,
-						time: 1
+						duration: 1
 						},
 						{
 							name: "Maestro Vidal 127",
+							time: "17:54",
 							instruction: "Tomar el colectivo 600 de autobuses Santa Fé",
 							type: "bus",
 							distance: 9,
-							time: 8,
+							duration: 8,
 							additional: "Manuel Quintana 1413"			
 						},
 						{
 							name: "Manuel Quintana 1423",
+							time: "17:54",
 							instruction: "Andar a destino Joaquin Furiel 2134",
 							type: "walk",
 							distance: 413,
-							time: 22
+							duration: 22
 						}]
 			}, 
 			{
@@ -49,19 +54,38 @@
 				end: "18:22",
 				totalTime: 33,
 				walkDistance: 344,
-					sub: [{name: "Empezar viaje en ubicación actual",
+					parts: [{name: "Empezar viaje en ubicación actual",
+					time: "17:54",
 					instruction: "Andar a destino Colón 122",
 					type: "walk",
 					distance: 210,
 					time: 12},
 					{
 						name: "Manuel Quintana 1423",
+						time: "17:54",
 						instruction: "Andar a destino Joaquin Furiel 2134",
 						type: "walk",
 						distance: 413,
 						time: 22
 					}]
 			}];
+
+			function init() {
+
+			}
+
+			function toggleExpansion(route) {
+				angular.forEach(vm.routes, function(routeC) {
+					routeC.expanded = false;
+				});
+				if(route.expanded) {
+					route.expanded = false;
+				}
+				else {
+					route.expanded = true;
+				}
+
+			}
 		}
 	}
 })();
