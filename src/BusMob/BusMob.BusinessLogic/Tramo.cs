@@ -14,6 +14,9 @@ namespace BusMob.BusinessLogic
         public int Orden { get; set; }
         public TipoTramo TipoTramo { get; set; }
 
+        public Direccion UbicacionSalida { get; set; }
+        public Direccion UbicacionLlegada { get; set; }
+
         private IEstrategiaCalculoDeTramo EstrategiaCalculoTramo { get; set; }
 
         private void AgregarEstrategiaCalculoTramo(IEstrategiaCalculoDeTramo estrategia)

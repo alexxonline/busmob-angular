@@ -47,9 +47,12 @@
     <Compile Include="EstrategiaCalculoTrolebus.cs" />
     <Compile Include="IEstrategiaCalculoTramoFactory.cs" />
     <Compile Include="IEstrategiaCalculoDeTramo.cs" />
+    <Compile Include="IGestorTrayectos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoTramo.cs" />
     <Compile Include="Tramo.cs" />
+    <Compile Include="Trayecto.cs" />
+    <Compile Include="TrayectoSugerido.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
