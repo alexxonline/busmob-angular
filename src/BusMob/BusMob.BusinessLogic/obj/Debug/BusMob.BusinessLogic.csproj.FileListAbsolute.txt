@@ -1,0 +1,5 @@
+C:\Users\Alex\_git\Busmob\src\BusMob\BusMob.BusinessLogic\bin\Debug\BusMob.BusinessLogic.dll
+C:\Users\Alex\_git\Busmob\src\BusMob\BusMob.BusinessLogic\bin\Debug\BusMob.BusinessLogic.pdb
+C:\Users\Alex\_git\Busmob\src\BusMob\BusMob.BusinessLogic\obj\Debug\BusMob.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Alex\_git\Busmob\src\BusMob\BusMob.BusinessLogic\obj\Debug\BusMob.BusinessLogic.dll
+C:\Users\Alex\_git\Busmob\src\BusMob\BusMob.BusinessLogic\obj\Debug\BusMob.BusinessLogic.pdb

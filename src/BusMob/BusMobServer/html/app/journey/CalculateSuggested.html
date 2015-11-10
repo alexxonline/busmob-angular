@@ -1,0 +1,35 @@
+<div>
+	<div class="container">
+	<div class="row" ng-if="vm.showForm">
+			<div class="col-md-12">
+				<div class="form-group">
+					<label>Desde</label>
+					<input class="form-control" type="text" ng-model="vm.busqueda.origen">
+				</div>
+				<div class="form-group">
+					<label>Hasta</label>
+					<input class="form-control" ng-model="vm.busqueda.destino">
+				</div>
+				<div class="form-group">
+					<label>Fecha y hora de salida</label>
+					<input class="form-control" type="datetime-local" ng-model="vm.busqueda.fechaSalida">
+				</div>
+				<div class="form-group">
+					<label>Fecha y hora de llegada</label>
+					<input class="form-control" type="datetime-local" ng-model="vm.busqueda.fechaLlegada">
+				</div>
+			</div>
+		</div>
+		<div class="row" style="text-align: right;" ng-if="vm.showForm">
+			<div class="col-md-12">
+				<button class="btn btn-primary" ng-click="vm.buscar()">Buscar</button>
+			</div>
+		</div>
+		<div class="row" ng-if="!vm.showForm">
+			<suggested-routes routes="vm.routes">
+			</suggested-routes>
+		</div>
+	</div>
+	<message manager="vm.messageManager">
+	</message>
+</div>

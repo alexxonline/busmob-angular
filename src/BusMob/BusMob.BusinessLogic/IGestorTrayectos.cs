@@ -8,6 +8,6 @@ namespace BusMob.BusinessLogic
 {
     public interface IGestorTrayectos
     {
-        List<TrayectoSugerido> CalcularTresMejoresTrayectos(Direccion origen, Direccion destino, DateTime fechaDesde, DateTime fechaHasta);
+        List<TrayectoSugerido> CalcularTresMejoresTrayectos(Direccion origen, Direccion destino, DateTime? fechaDesde, DateTime? fechaHasta);
     }
 }

@@ -45,6 +45,7 @@
     <Compile Include="EstrategiaCalculoAPie.cs" />
     <Compile Include="EstrategiaCalculoColectivo.cs" />
     <Compile Include="EstrategiaCalculoTrolebus.cs" />
+    <Compile Include="GestorTrayectos.cs" />
     <Compile Include="IEstrategiaCalculoTramoFactory.cs" />
     <Compile Include="IEstrategiaCalculoDeTramo.cs" />
     <Compile Include="IGestorTrayectos.cs" />

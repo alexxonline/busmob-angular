@@ -9,7 +9,16 @@ namespace BusMob.BusinessLogic
     public class Tramo
     {
         public int Distancia { get; set; }
-        public int Duracion { get; set; }
+
+
+        public int Duracion
+        {
+            get
+            {
+                return EstrategiaCalculoTramo.CalcularDuracionTramo(UbicacionSalida, UbicacionLlegada);
+            }
+
+        }
         public TimeSpan HoraSalida { get; set; }
         public int Orden { get; set; }
         public TipoTramo TipoTramo { get; set; }
@@ -19,7 +28,7 @@ namespace BusMob.BusinessLogic
 
         private IEstrategiaCalculoDeTramo EstrategiaCalculoTramo { get; set; }
 
-        private void AgregarEstrategiaCalculoTramo(IEstrategiaCalculoDeTramo estrategia)
+        public void AgregarEstrategiaCalculoTramo(IEstrategiaCalculoDeTramo estrategia)
         {
             EstrategiaCalculoTramo = estrategia;
         }
